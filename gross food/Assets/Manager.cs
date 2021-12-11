@@ -28,7 +28,7 @@ public class Manager : MonoBehaviour
         int counter = 0;
         foreach (GameObject ingredientName in ingredients)
         {
-            ingredientNames[counter] = ingredientName.GetComponent<ingredient>().name;
+            ingredientNames[counter] = ingredientName.GetComponent<ingredient>().ingredientName;
 
             counter++;
         }
@@ -42,7 +42,7 @@ public class Manager : MonoBehaviour
             GameObject[] RecipeIngredientObj = RecipeObj.GetComponent<Recipe>().recipeIngredients;
            foreach (GameObject ingredientChild in RecipeIngredientObj)
            {
-                string name = ingredientChild.GetComponent<ingredient>().name;
+                string name = ingredientChild.GetComponent<ingredient>().ingredientName;
                 Debug.Log(name);
            }
 

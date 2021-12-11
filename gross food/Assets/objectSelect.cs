@@ -35,7 +35,7 @@ public class objectSelect : MonoBehaviour
             if (hit.transform.gameObject.GetComponent<ingredient>() != null)
             {
                 ingredientScript = hit.transform.gameObject.GetComponent<ingredient>();
-                ingredientNameTxt.text = ingredientScript.name;
+                ingredientNameTxt.text = ingredientScript.ingredientName;
                 descriptionTxt.text = ingredientScript.Discription;
 
 
