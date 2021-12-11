@@ -15,7 +15,7 @@ public class scenario : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Complete = a+" "  + "<color=#ff0000ff>"+ people[Random.Range(0, people.Length)] +"</color>"+ " "+ b + " "+ "<color=#ff0000ff>"+occasions[Random.Range(0, occasions.Length)] + "</color>" + " " + c;
+        Complete = a+" "  + "<color=#F15C5C>" + people[Random.Range(0, people.Length)] +"</color>"+ " "+ b + " "+ "<color=#F15C5C>" + occasions[Random.Range(0, occasions.Length)] + "</color>" + " " + c;
         textObj.text = Complete;
 
 
