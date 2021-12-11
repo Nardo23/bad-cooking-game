@@ -216,6 +216,7 @@ GameObject:
   - component: {fileID: 229752052}
   - component: {fileID: 229752051}
   - component: {fileID: 229752053}
+  - component: {fileID: 229752054}
   m_Layer: 0
   m_Name: Baby asprin
   m_TagString: Untagged
@@ -302,6 +303,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ingredientName: Baby Asprin
   Discription: 
+--- !u!65 &229752054
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 229752050}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3.2100005, y: 1.7300003, z: 0.20000003}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &285767292
 GameObject:
   m_ObjectHideFlags: 0
@@ -313,6 +327,7 @@ GameObject:
   - component: {fileID: 285767294}
   - component: {fileID: 285767293}
   - component: {fileID: 285767295}
+  - component: {fileID: 285767296}
   m_Layer: 0
   m_Name: Dry Leaves
   m_TagString: Untagged
@@ -399,6 +414,98 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ingredientName: Dry Leaves
   Discription: 
+--- !u!65 &285767296
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 285767292}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 4.51, y: 2.71, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &366797384
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 366797387}
+  - component: {fileID: 366797386}
+  - component: {fileID: 366797385}
+  m_Layer: 5
+  m_Name: IngredientDescriptionText
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &366797385
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 366797384}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 40
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 3
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: NEW TEXT
+--- !u!222 &366797386
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 366797384}
+  m_CullTransparentMesh: 0
+--- !u!224 &366797387
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 366797384}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1730785104}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 1, y: 0}
+  m_AnchorMax: {x: 1, y: 0}
+  m_AnchoredPosition: {x: -419, y: 103}
+  m_SizeDelta: {x: 850.4187, y: 176.49951}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &382078374
 GameObject:
   m_ObjectHideFlags: 0
@@ -410,6 +517,7 @@ GameObject:
   - component: {fileID: 382078376}
   - component: {fileID: 382078377}
   - component: {fileID: 382078375}
+  - component: {fileID: 382078378}
   m_Layer: 0
   m_Name: flavor packet
   m_TagString: Untagged
@@ -496,6 +604,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ingredientName: Ramen Flavor Packet
   Discription: 
+--- !u!65 &382078378
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 382078374}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3.39, y: 2.32, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &539171868
 GameObject:
   m_ObjectHideFlags: 0
@@ -507,6 +628,7 @@ GameObject:
   - component: {fileID: 539171871}
   - component: {fileID: 539171870}
   - component: {fileID: 539171869}
+  - component: {fileID: 539171872}
   m_Layer: 0
   m_Name: Spider
   m_TagString: Untagged
@@ -593,6 +715,19 @@ Transform:
   m_Father: {fileID: 957210594}
   m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &539171872
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 539171868}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.06, y: 3.96, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &601802699
 GameObject:
   m_ObjectHideFlags: 0
@@ -759,6 +894,7 @@ GameObject:
   - component: {fileID: 606919079}
   - component: {fileID: 606919078}
   - component: {fileID: 606919077}
+  - component: {fileID: 606919080}
   m_Layer: 0
   m_Name: Creamed Corn
   m_TagString: Untagged
@@ -845,6 +981,19 @@ Transform:
   m_Father: {fileID: 957210594}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &606919080
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 606919076}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.8399997, y: 4.0799994, z: 0.19999999}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &611951886
 GameObject:
   m_ObjectHideFlags: 0
@@ -1020,6 +1169,7 @@ GameObject:
   - component: {fileID: 678754638}
   - component: {fileID: 678754637}
   - component: {fileID: 678754639}
+  - component: {fileID: 678754640}
   m_Layer: 0
   m_Name: Radish?
   m_TagString: Untagged
@@ -1106,6 +1256,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ingredientName: Radish or Possibly a Turnip?
   Discription: 
+--- !u!65 &678754640
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 678754636}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3.9899998, y: 2.7699997, z: 0.19999999}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &782672456
 GameObject:
   m_ObjectHideFlags: 0
@@ -1117,6 +1280,7 @@ GameObject:
   - component: {fileID: 782672458}
   - component: {fileID: 782672457}
   - component: {fileID: 782672459}
+  - component: {fileID: 782672460}
   m_Layer: 0
   m_Name: Cocktail Olive
   m_TagString: Untagged
@@ -1203,6 +1367,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ingredientName: Cocktail Olive
   Discription: 
+--- !u!65 &782672460
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 782672456}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 4.17, y: 6.85, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &944362484
 GameObject:
   m_ObjectHideFlags: 0
@@ -1214,6 +1391,7 @@ GameObject:
   - component: {fileID: 944362486}
   - component: {fileID: 944362485}
   - component: {fileID: 944362487}
+  - component: {fileID: 944362488}
   m_Layer: 0
   m_Name: corroded battery
   m_TagString: Untagged
@@ -1300,6 +1478,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ingredientName: Corroded Battery
   Discription: 
+--- !u!65 &944362488
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 944362484}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.17, y: 1.04, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &948496927
 GameObject:
   m_ObjectHideFlags: 0
@@ -1440,6 +1631,7 @@ GameObject:
   - component: {fileID: 992723074}
   - component: {fileID: 992723073}
   - component: {fileID: 992723075}
+  - component: {fileID: 992723076}
   m_Layer: 0
   m_Name: Painting
   m_TagString: Untagged
@@ -1526,6 +1718,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ingredientName: Painting of a Bowl of Fruit
   Discription: 
+--- !u!65 &992723076
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 992723072}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 6.9199996, y: 5.7699995, z: 0.19999999}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1055762398
 GameObject:
   m_ObjectHideFlags: 0
@@ -1537,6 +1742,7 @@ GameObject:
   - component: {fileID: 1055762400}
   - component: {fileID: 1055762399}
   - component: {fileID: 1055762401}
+  - component: {fileID: 1055762402}
   m_Layer: 0
   m_Name: ginger ale
   m_TagString: Untagged
@@ -1623,6 +1829,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ingredientName: A Little Bit of Ginger Ale
   Discription: 
+--- !u!65 &1055762402
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1055762398}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.14, y: 3.05, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1169598953
 GameObject:
   m_ObjectHideFlags: 0
@@ -1672,6 +1891,7 @@ GameObject:
   - component: {fileID: 1239812732}
   - component: {fileID: 1239812731}
   - component: {fileID: 1239812733}
+  - component: {fileID: 1239812734}
   m_Layer: 0
   m_Name: tooth magnet
   m_TagString: Untagged
@@ -1758,6 +1978,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ingredientName: Tooth-Shaped Magnet
   Discription: 
+--- !u!65 &1239812734
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1239812730}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.5, y: 1.52, z: 0.19999999}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1276754446
 GameObject:
   m_ObjectHideFlags: 0
@@ -1933,6 +2166,7 @@ GameObject:
   - component: {fileID: 1471401598}
   - component: {fileID: 1471401597}
   - component: {fileID: 1471401599}
+  - component: {fileID: 1471401600}
   m_Layer: 0
   m_Name: vitamin c
   m_TagString: Untagged
@@ -2019,6 +2253,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ingredientName: Vitamin C Chewables
   Discription: 
+--- !u!65 &1471401600
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1471401596}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3.18, y: 5.3, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1600914639
 GameObject:
   m_ObjectHideFlags: 0
@@ -2109,6 +2356,7 @@ GameObject:
   - component: {fileID: 1670909963}
   - component: {fileID: 1670909962}
   - component: {fileID: 1670909964}
+  - component: {fileID: 1670909965}
   m_Layer: 0
   m_Name: altoids
   m_TagString: Untagged
@@ -2195,6 +2443,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ingredientName: Spicy Altoids
   Discription: 
+--- !u!65 &1670909965
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1670909961}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.93, y: 1.16, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1688503021
 GameObject:
   m_ObjectHideFlags: 0
@@ -2206,6 +2467,7 @@ GameObject:
   - component: {fileID: 1688503023}
   - component: {fileID: 1688503022}
   - component: {fileID: 1688503024}
+  - component: {fileID: 1688503025}
   m_Layer: 0
   m_Name: ducksauce
   m_TagString: Untagged
@@ -2292,6 +2554,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ingredientName: Duck Sauce Packet
   Discription: 
+--- !u!65 &1688503025
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1688503021}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.2499999, y: 1.9099997, z: 0.19999999}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1695175887
 GameObject:
   m_ObjectHideFlags: 0
@@ -2303,6 +2578,7 @@ GameObject:
   - component: {fileID: 1695175890}
   - component: {fileID: 1695175889}
   - component: {fileID: 1695175888}
+  - component: {fileID: 1695175891}
   m_Layer: 0
   m_Name: Not Butter
   m_TagString: Untagged
@@ -2389,6 +2665,98 @@ Transform:
   m_Father: {fileID: 957210594}
   m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -2.883}
+--- !u!65 &1695175891
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1695175887}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3.24, y: 2.48, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &1704309256
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1704309257}
+  - component: {fileID: 1704309258}
+  - component: {fileID: 1704309259}
+  m_Layer: 5
+  m_Name: IngredientNameText
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1704309257
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1704309256}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1730785104}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 1, y: 0}
+  m_AnchorMax: {x: 1, y: 0}
+  m_AnchoredPosition: {x: -7, y: 214}
+  m_SizeDelta: {x: 1747.8093, y: 103.600525}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &1704309258
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1704309256}
+  m_CullTransparentMesh: 0
+--- !u!114 &1704309259
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1704309256}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.9433962, g: 0.36193183, b: 0.36193183, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 60
+    m_FontStyle: 1
+    m_BestFit: 0
+    m_MinSize: 3
+    m_MaxSize: 70
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: NEW TEXT
 --- !u!1 &1730785100
 GameObject:
   m_ObjectHideFlags: 0
@@ -2480,6 +2848,8 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 1600914640}
+  - {fileID: 1704309257}
+  - {fileID: 366797387}
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2636,6 +3006,51 @@ Transform:
   m_Father: {fileID: 1169598954}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -87.884}
+--- !u!1 &1823146539
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1823146541}
+  - component: {fileID: 1823146540}
+  m_Layer: 0
+  m_Name: Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1823146540
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1823146539}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: caa6d2ddf5fdcd54c90fbb2e3de5e3f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ingredientNameTxt: {fileID: 1704309259}
+  descriptionTxt: {fileID: 366797385}
+--- !u!4 &1823146541
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1823146539}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1310.7573, y: 306.01974, z: -278.76645}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1923176359
 GameObject:
   m_ObjectHideFlags: 0
@@ -2647,6 +3062,7 @@ GameObject:
   - component: {fileID: 1923176361}
   - component: {fileID: 1923176360}
   - component: {fileID: 1923176362}
+  - component: {fileID: 1923176363}
   m_Layer: 0
   m_Name: Erotic Magnet
   m_TagString: Untagged
@@ -2733,6 +3149,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ingredientName: Fridge Magnet (Erotic)
   Discription: 
+--- !u!65 &1923176363
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1923176359}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3.63, y: 4.63, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1950061164
 GameObject:
   m_ObjectHideFlags: 0
@@ -2744,6 +3173,7 @@ GameObject:
   - component: {fileID: 1950061166}
   - component: {fileID: 1950061165}
   - component: {fileID: 1950061167}
+  - component: {fileID: 1950061168}
   m_Layer: 0
   m_Name: Nuva Ring
   m_TagString: Untagged
@@ -2830,6 +3260,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ingredientName: Nuva Ring (Expired)
   Discription: 
+--- !u!65 &1950061168
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1950061164}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.2899997, y: 1.0999999, z: 0.19999999}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1971989610
 GameObject:
   m_ObjectHideFlags: 0
