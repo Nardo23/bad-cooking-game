@@ -494,7 +494,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a2335bdbf618bf34aa199420955c4556, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ingredientName: Flavor Packet
+  ingredientName: Ramen Flavor Packet
   Discription: 
 --- !u!1 &539171868
 GameObject:
@@ -623,14 +623,33 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   people:
-  - peepee
-  - poopoo
+  - your parents
+  - a date
+  - the mayor
+  - the poet laureate
+  - your next door neighbor
+  - your uptight half-sibling
+  - Michael Jordan
+  - a dark mirror of yourself (rare)
+  - atonal contemporary classical composer Brian Ferneyhough
+  - 1990s bad-attitude cereal mascot Larceny Raccoon
   occasions:
-  - asdf
-  - dsaf
-  a: this stuff
-  b: then this
-  c: ending!
+  - your graduation
+  - a dinner date
+  - an unforgettable luncheon
+  - Sex
+  - Christmas
+  - a dinner that you won in a sweepstakes
+  - poker night
+  - drugs
+  - book club
+  - a screening of your new experimental film
+  a: Oh no! You totally forgot that
+  b: is coming over for
+  c: "tonight! You have five minutes to prepare dinner with ingredients that you
+    can find in your kitchen. But you haven\u2019t gone shopping and also your shit
+    generally sucks! Can you create a meal worthy of your guest? Or will you suffer
+    their scorn, a burden that your soul will not so easily shed?"
   textObj: {fileID: 1600914641}
 --- !u!4 &601802701
 Transform:
@@ -759,7 +778,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a2335bdbf618bf34aa199420955c4556, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ingredientName: Creamed Corn
+  ingredientName: Can of Creamed Corn
   Discription: 
 --- !u!212 &606919078
 SpriteRenderer:
@@ -1085,7 +1104,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a2335bdbf618bf34aa199420955c4556, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ingredientName: Radish?
+  ingredientName: Radish or Possibly a Turnip?
   Discription: 
 --- !u!1 &782672456
 GameObject:
@@ -1505,7 +1524,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a2335bdbf618bf34aa199420955c4556, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ingredientName: Painting
+  ingredientName: Painting of a Bowl of Fruit
   Discription: 
 --- !u!1 &1055762398
 GameObject:
@@ -1602,7 +1621,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a2335bdbf618bf34aa199420955c4556, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ingredientName: ginger ale
+  ingredientName: A Little Bit of Ginger Ale
   Discription: 
 --- !u!1 &1169598953
 GameObject:
@@ -1737,7 +1756,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a2335bdbf618bf34aa199420955c4556, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ingredientName: Tooth Magnet
+  ingredientName: Tooth-Shaped Magnet
   Discription: 
 --- !u!1 &1276754446
 GameObject:
@@ -2271,7 +2290,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a2335bdbf618bf34aa199420955c4556, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ingredientName: Duck Sauce
+  ingredientName: Duck Sauce Packet
   Discription: 
 --- !u!1 &1695175887
 GameObject:
@@ -2303,7 +2322,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a2335bdbf618bf34aa199420955c4556, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ingredientName: Not Butter
+  ingredientName: Tub of Butter Substitute
   Discription: 
 --- !u!212 &1695175889
 SpriteRenderer:
@@ -2712,7 +2731,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a2335bdbf618bf34aa199420955c4556, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ingredientName: Erotic Magnet
+  ingredientName: Fridge Magnet (Erotic)
   Discription: 
 --- !u!1 &1950061164
 GameObject:
@@ -2809,7 +2828,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a2335bdbf618bf34aa199420955c4556, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ingredientName: Nuva Ring
+  ingredientName: Nuva Ring (Expired)
   Discription: 
 --- !u!1 &1971989610
 GameObject:
