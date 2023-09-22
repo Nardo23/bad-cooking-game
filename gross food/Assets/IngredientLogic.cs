@@ -1,11 +1,23 @@
 ﻿using System;
 using System.Collections.Generic;
-
+using UnityEngine;
 
 namespace src
 {
+   
+   
+
+
     class CompareIngredients
     {
+
+        string[] ingredients;
+        public Manager ManagerScript;
+        void SetData()
+        {
+            ingredients =ManagerScript.ingredientNames;
+        }
+       
         // static string[] ingredients = 
         // {
         //     "itemA",
@@ -15,10 +27,20 @@ namespace src
         // };
 
 
-        // static Dictionary<string, string[]> validRecipesDictionary = new Dictionary<string, string[]>()
-        // {
-        //         {"Steamed Hams", new string[] {"itemB", "itemA"} }
-        // };
+         static Dictionary<string, string[]> validRecipesDictionary = new Dictionary<string, string[]>()
+         {
+            {"Spicy Spider", new string[] {"Spider", "Tub of Butter Substitute", "Spicy Altoids" } },
+            {"Orange Corn", new string[] { "Can of Creamed Corn", "Duck Sauce Packet", "Ramen Flavor Packet" } },
+            {"Decorative Gourds", new string[] { "Dry Leaves", "Spider" } },
+            {"The Horrible Radish", new string[] { "Radish or Possibly a Turnip?", "Corroded Battery", "Tooth-Shaped Dentist Magnet" } },
+            {"The Horrible Radish", new string[] { "Radish or Possibly a Turnip?", "Corroded Battery", "Fridge Magnet (Erotic)" } },
+            {"Olive Launcher", new string[] { "Cocktail Olive", "Spicy Altoids", "A Little Bit of Ginger Ale" } },
+            {"Corn Sandwich on Magnet Bread", new string[] { "Can of Creamed Corn", "Tooth-Shaped Dentist Magnet", "Fridge Magnet (Erotic)" } },
+            {"First Aid kit", new string[] { "Nuva Ring (Expired)", "Vitamin C Chewables", "Baby Asprin" } }
+
+
+
+         };
 
 
         static Dictionary<string, int> ingredientsBinaryMap  = new Dictionary<string, int>();

@@ -3,50 +3,54 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class objectSelect : MonoBehaviour
+namespace src
 {
-
-    Ray ray;
-    RaycastHit hit;
-
-    ingredient ingredientScript;
-
-    public Text ingredientNameTxt;
-    public Text descriptionTxt;
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
+    public class objectSelect : MonoBehaviour
     {
 
+        Ray ray;
+        RaycastHit hit;
 
+        ingredient ingredientScript;
 
-
-        ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-        if (Physics.Raycast(ray, out hit))
+        public Text ingredientNameTxt;
+        public Text descriptionTxt;
+        Manager ManagerScript;
+        // Start is called before the first frame update
+        void Start()
         {
-            Debug.Log("piss!");
 
-            if (hit.transform.gameObject.GetComponent<ingredient>() != null)
+        }
+
+        // Update is called once per frame
+        void Update()
+        {
+
+
+
+
+            ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+            if (Physics.Raycast(ray, out hit))
             {
-                ingredientScript = hit.transform.gameObject.GetComponent<ingredient>();
-                ingredientNameTxt.text = ingredientScript.ingredientName;
-                descriptionTxt.text = ingredientScript.Discription;
+                Debug.Log("piss!");
 
+                if (hit.transform.gameObject.GetComponent<ingredient>() != null)
+                {
+                    ingredientScript = hit.transform.gameObject.GetComponent<ingredient>();
+                    ingredientNameTxt.text = ingredientScript.ingredientName;
+                    descriptionTxt.text = ingredientScript.Discription;
+
+
+                }
 
             }
+
 
         }
 
 
+
+
     }
-
-
-    
-
 }
+
