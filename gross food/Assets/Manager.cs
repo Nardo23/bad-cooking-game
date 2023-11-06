@@ -14,7 +14,7 @@ namespace src
 
 
         // Start is called before the first frame update
-        void Start()
+        public void SetData()
         {
             ingredientData();
 
@@ -26,10 +26,13 @@ namespace src
         {
             ingredients = GameObject.FindGameObjectsWithTag("ingredient");
             ingredientNames = new string[ingredients.Length];
+            //Debug.Log(ingredientNames[0]);
 
             int counter = 0;
             foreach (GameObject ingredientName in ingredients)
             {
+                ingredients[counter].SetActive(true);
+                ingredients[counter].GetComponent<SpriteRenderer>().enabled = true;
                 ingredientNames[counter] = ingredientName.GetComponent<ingredient>().ingredientName;
 
                 counter++;

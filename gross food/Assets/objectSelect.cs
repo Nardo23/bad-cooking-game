@@ -22,7 +22,13 @@ namespace src
         // Start is called before the first frame update
         void Start()
         {
+           
+           
+        }
 
+        private void Reset()
+        {
+            ingredientCount = 0;
         }
 
         void UseIngredient(string name)
@@ -54,7 +60,13 @@ namespace src
                     descriptionTxt.text = ingredientScript.Discription;
                     if (Input.GetButtonDown("Fire1"))
                     {
-                        UseIngredient(ingredientScript.ingredientName);
+                        
+                        if(ingredientCount < 3)
+                        {
+                            hit.transform.gameObject.GetComponent<SpriteRenderer>().enabled = false;
+                            UseIngredient(ingredientScript.ingredientName);
+                        }
+                            
                     }
 
                 }

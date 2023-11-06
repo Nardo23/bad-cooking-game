@@ -2,30 +2,38 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class startGame : MonoBehaviour
+namespace src 
 {
-    public GameObject ingredients;
-    public GameObject startButton;
-    public GameObject uiStuff;
-    
-    public Animator anim;
-    // Start is called before the first frame update
-    void Start()
+    public class startGame : MonoBehaviour
     {
-        uiStuff.SetActive(true);
-        ingredients.SetActive(false);
+        public GameObject ingredients;
+        public GameObject startButton;
+        public GameObject uiStuff;
+        public Manager managerScript;
+        public Animator anim;
+
+        // Start is called before the first frame update
+        void Start()
+        {
+            managerScript.SetData();
+            uiStuff.SetActive(true);
+            ingredients.SetActive(false);
+        }
+
+
+        public void startTheGame()
+        {
+            anim.SetTrigger("fade");
+            startButton.SetActive(false);
+            ingredients.SetActive(true);
+
+
+        }
+
+
+
     }
-
-    
-    public void startTheGame()
-    {
-        anim.SetTrigger("fade");
-        startButton.SetActive(false);
-        ingredients.SetActive(true);
-        
-
-    }
-
-    
-
 }
+
+
+

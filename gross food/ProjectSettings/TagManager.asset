@@ -43,3 +43,6 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: EndUI
+    uniqueID: 1658857795
+    locked: 0
