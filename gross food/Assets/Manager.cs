@@ -34,7 +34,7 @@ namespace src
                 ingredients[counter].SetActive(true);
                 ingredients[counter].GetComponent<SpriteRenderer>().enabled = true;
                 ingredientNames[counter] = ingredientName.GetComponent<ingredient>().ingredientName;
-
+                Debug.Log(ingredientNames[counter]);
                 counter++;
             }
         }

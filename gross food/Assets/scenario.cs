@@ -39,7 +39,7 @@ namespace src
 
         }
 
-        void endingScenario()
+        public void endingScenario()
         {
             if (CompareScript.goodEnding)
             {
@@ -49,8 +49,8 @@ namespace src
             {
                 ResultString = goodResults[Random.Range(0, badResults.Length)];
             }
-            ResultString = ResultString.Replace("%%", RandomPerson);
-            ResultString = ResultString.Replace("##", RandomOcasion);
+            ResultString = ResultString.Replace("%%", "<color=#F15C5C>"+ RandomPerson + "</color>");
+            ResultString = ResultString.Replace("##", "<color=#F15C5C>"+ RandomOcasion + "</color>");
             ResultText.text = ResultString;
 
         }

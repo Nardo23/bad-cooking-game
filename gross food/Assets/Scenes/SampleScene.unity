@@ -813,7 +813,7 @@ MonoBehaviour:
     can find in your kitchen. But you haven\u2019t gone shopping and also your shit
     generally sucks! Can you create a meal worthy of your guest? Or will you suffer
     their scorn, a burden that your soul will not so easily shed?"
-  startTextObj: {fileID: 0}
+  startTextObj: {fileID: 1600914641}
   YouMadeText: {fileID: 0}
   RecipeDescription: {fileID: 0}
   ResultText: {fileID: 2065707131}
@@ -821,8 +821,7 @@ MonoBehaviour:
   - "All right! %% is actually eating this dinner! You pulled this ## off!l, but
     just barely. You\u2019ll definitely be prepared next time, right? Right? "
   - '%% is impressed. "The, er, rustic decor of your apartment belies a resourceful
-    culinary prowess," they say. "This has truly been a ## to remember!" How fortuitous!ll,
-    more food for you! '
+    culinary prowess," they say. "This has truly been a ## to remember!" How fortuitous!'
   badResults:
   - "Bummer! %% saw right through you. They\u2019re not going to eat this steaming
     pile of garbage! Your ## is ruined! Next time, try preparing, at all, when you
@@ -1030,7 +1029,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!212 &619454244
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1710,7 +1709,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 102}
+  m_AnchoredPosition: {x: 0, y: 43}
   m_SizeDelta: {x: 1690, y: 329.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1203084715
@@ -1735,7 +1734,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 56
+    m_FontSize: 45
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 1
@@ -2826,6 +2825,7 @@ MonoBehaviour:
   - 
   - 
   - 
+  ingredientCount: 0
 --- !u!4 &1823146541
 Transform:
   m_ObjectHideFlags: 0
@@ -2872,6 +2872,9 @@ MonoBehaviour:
   ManagerScript: {fileID: 1823146544}
   objectSelectScript: {fileID: 1823146540}
   goodEnding: 0
+  YouMadeText: {fileID: 1828335725}
+  RecipeDescription: {fileID: 1203084715}
+  scenarioScript: {fileID: 601802700}
 --- !u!114 &1823146544
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2921,8 +2924,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -173}
-  m_SizeDelta: {x: 2509, y: 195}
+  m_AnchoredPosition: {x: 0, y: -154}
+  m_SizeDelta: {x: 2057.5, y: 403.64}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1828335725
 MonoBehaviour:
@@ -2946,12 +2949,12 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 150
+    m_FontSize: 125
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 1
     m_MaxSize: 150
-    m_Alignment: 1
+    m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
@@ -3185,7 +3188,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -175}
+  m_AnchoredPosition: {x: 0, y: -234}
   m_SizeDelta: {x: 1690, y: 329.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2065707131
@@ -3210,7 +3213,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 56
+    m_FontSize: 45
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 1
@@ -3221,9 +3224,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Oh damn, [person] is not thrilled with you. Apparently, most of those
-    ingredients were \"not food\" and \"arguably poison\". All in all, this [occasion]
-    could have gone a lot better.\r"
+  m_Text: 
 --- !u!222 &2065707132
 CanvasRenderer:
   m_ObjectHideFlags: 0

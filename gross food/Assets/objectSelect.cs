@@ -17,7 +17,7 @@ namespace src
         public Text descriptionTxt;
         Manager ManagerScript;
         public string[] PlayerIngredients = new string[3];
-        int ingredientCount = 0;
+        public int ingredientCount = 0;
 
         // Start is called before the first frame update
         void Start()
