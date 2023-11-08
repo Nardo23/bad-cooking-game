@@ -22,6 +22,9 @@ namespace src
         public Text RecipeDescription;
         string Description;
         public scenario scenarioScript;
+        public GameObject endScreen;
+        public GameObject scenarioCanvas;
+        public GameObject cookCanvas;
 
         void SetData()
         {
@@ -131,15 +134,21 @@ namespace src
                 goodEnding = true;
                 YouMadeText.text = "You Made: " + validRecipesBinaryMap[binarySum];
                 Debug.Log("YOU MADE: " + validRecipesBinaryMap[binarySum]);
+                GetRecipeDescription(validRecipesBinaryMap[binarySum]);
+                RecipeDescription.text = Description;
+                scenarioScript.endingScenario();
             } else {
                 //Failure branch  here
                 goodEnding = false;
                 YouMadeText.text = "You Made: Garbage";
                 Debug.Log("YOU MADE: Garbage");
+                //GetRecipeDescription(validRecipesBinaryMap[binarySum]);
+                //RecipeDescription.text = Description;
+                scenarioScript.endingScenario();
             }
-            GetRecipeDescription(validRecipesBinaryMap[binarySum]);
-            RecipeDescription.text = Description;
-            scenarioScript.endingScenario();
+            endScreen.SetActive(true);
+            scenarioCanvas.SetActive(false);
+            cookCanvas.SetActive(false);
         }
 
         

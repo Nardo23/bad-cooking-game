@@ -11,6 +11,7 @@ namespace src
         public GameObject uiStuff;
         public Manager managerScript;
         public Animator anim;
+       
 
         // Start is called before the first frame update
         void Start()
@@ -26,8 +27,7 @@ namespace src
             anim.SetTrigger("fade");
             startButton.SetActive(false);
             ingredients.SetActive(true);
-
-
+            
         }
 
 

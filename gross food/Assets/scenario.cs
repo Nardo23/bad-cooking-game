@@ -47,7 +47,7 @@ namespace src
             }
             else
             {
-                ResultString = goodResults[Random.Range(0, badResults.Length)];
+                ResultString = badResults[Random.Range(0, badResults.Length)];
             }
             ResultString = ResultString.Replace("%%", "<color=#F15C5C>"+ RandomPerson + "</color>");
             ResultString = ResultString.Replace("##", "<color=#F15C5C>"+ RandomOcasion + "</color>");

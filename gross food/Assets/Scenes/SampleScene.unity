@@ -1029,7 +1029,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &619454244
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1982,12 +1982,12 @@ GameObject:
   - component: {fileID: 1448263830}
   - component: {fileID: 1448263829}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: Canvas Cook
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1448263829
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2826,6 +2826,21 @@ MonoBehaviour:
   - 
   - 
   ingredientCount: 0
+  cookCanvas: {fileID: 1448263828}
+  cookingActions:
+  - You dump $$ into a saucepan and try to break it up a bit with the side of a bamboo
+    spoon.
+  - A cat steals your $$ but you manage to wrest it from the animal and add it to
+    the pot.
+  - You add $$ to the dish using a long spoon, but only because all of your normal
+    spoons are dirty.
+  - You boil $$ long enough to kill whatever that smell is.
+  - It turns out you can broil $$.
+  - You try to chop $$ but your good knife is dull too.
+  - You preheat the $$ on the George Foreman Grill while you prepare the other ingredients.
+  - Running hot water over $$ is as good as boiling it, wouldn't you say?
+  - You toss the $$ into the food processor. Why do you have a food processor?
+  - You give $$ a quick taste before tossing it into the pot.
 --- !u!4 &1823146541
 Transform:
   m_ObjectHideFlags: 0
@@ -2875,6 +2890,9 @@ MonoBehaviour:
   YouMadeText: {fileID: 1828335725}
   RecipeDescription: {fileID: 1203084715}
   scenarioScript: {fileID: 601802700}
+  endScreen: {fileID: 619454243}
+  scenarioCanvas: {fileID: 1730785100}
+  cookCanvas: {fileID: 1448263828}
 --- !u!114 &1823146544
 MonoBehaviour:
   m_ObjectHideFlags: 0

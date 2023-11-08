@@ -18,6 +18,11 @@ namespace src
         Manager ManagerScript;
         public string[] PlayerIngredients = new string[3];
         public int ingredientCount = 0;
+        public GameObject cookCanvas;
+        [SerializeField]
+        string[] cookingActions;
+        string cookingActionEdited;
+        bool canShowText = true;
 
         // Start is called before the first frame update
         void Start()
@@ -29,6 +34,21 @@ namespace src
         private void Reset()
         {
             ingredientCount = 0;
+            PlayerIngredients[0] = "";
+            PlayerIngredients[1] = "";
+            PlayerIngredients[2] = "";
+        }
+
+
+        IEnumerator Countdown(int seconds)
+        {
+            int counter = seconds;
+            while (counter > 0)
+            {
+                yield return new WaitForSeconds(1);
+                counter--;
+            }
+            canShowText = true;
         }
 
         void UseIngredient(string name)
@@ -38,6 +58,18 @@ namespace src
                 PlayerIngredients[ingredientCount] = name;
                 ingredientCount++;
                 Debug.Log("added " + name);
+                
+                cookingActionEdited = cookingActions[Random.Range(0, cookingActions.Length)];
+                cookingActionEdited = cookingActionEdited.Replace("$$", "<color=#F15C5C>" + ingredientNameTxt.text + "</color>");
+                descriptionTxt.text = cookingActionEdited;
+                ingredientNameTxt.text = "";
+                canShowText = false;
+                StartCoroutine(Countdown(2));
+
+            }
+            if(ingredientCount == 3)
+            {
+                cookCanvas.SetActive(true);
             }
         }
 
@@ -56,8 +88,16 @@ namespace src
                 if (hit.transform.gameObject.GetComponent<ingredient>() != null)
                 {
                     ingredientScript = hit.transform.gameObject.GetComponent<ingredient>();
-                    ingredientNameTxt.text = ingredientScript.ingredientName;
-                    descriptionTxt.text = ingredientScript.Discription;
+                    if (canShowText)
+                    {
+                        if(PlayerIngredients[0] != ingredientScript.ingredientName && PlayerIngredients[1] != ingredientScript.ingredientName && PlayerIngredients[2] != ingredientScript.ingredientName)
+                        {
+                            ingredientNameTxt.text = ingredientScript.ingredientName;
+                            descriptionTxt.text = ingredientScript.Discription;
+                        }
+                        
+                    }
+                    
                     if (Input.GetButtonDown("Fire1"))
                     {
                         
