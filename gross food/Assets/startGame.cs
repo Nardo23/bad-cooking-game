@@ -11,22 +11,36 @@ namespace src
         public GameObject uiStuff;
         public Manager managerScript;
         public Animator anim;
-       
+        public GameObject EndScreen;
+        public GameObject nameText, descriptionText;
+        public GameObject rerollButton;
 
         // Start is called before the first frame update
         void Start()
         {
-            managerScript.SetData();
-            uiStuff.SetActive(true);
-            ingredients.SetActive(false);
+            startStuff();
         }
 
 
+        public void startStuff()
+        {
+            managerScript.SetData();
+            uiStuff.SetActive(true);
+            ingredients.SetActive(false);
+            EndScreen.SetActive(false);
+            nameText.SetActive(false);
+            descriptionText.SetActive(false);
+        }
+        public void activateRerolls()
+        {
+            rerollButton.SetActive(true);
+        }
         public void startTheGame()
         {
             anim.SetTrigger("fade");
             startButton.SetActive(false);
             ingredients.SetActive(true);
+            rerollButton.SetActive(false);
             
         }
 

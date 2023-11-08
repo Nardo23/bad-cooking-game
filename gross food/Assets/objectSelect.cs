@@ -31,12 +31,14 @@ namespace src
            
         }
 
-        private void Reset()
+        public void Reset()
         {
             ingredientCount = 0;
             PlayerIngredients[0] = "";
             PlayerIngredients[1] = "";
             PlayerIngredients[2] = "";
+            
+
         }
 
 

@@ -22,6 +22,7 @@ namespace src
         public CompareIngredients CompareScript;
         string ResultString;
         string RandomPerson, RandomOcasion;
+        public GameObject startButton;
         // Start is called before the first frame update
         void Start()
         {
@@ -29,8 +30,11 @@ namespace src
 
         }
 
-        void beginingScenario()
+        public void beginingScenario()
         {
+            startTextObj.gameObject.SetActive(true);
+            startButton.SetActive(true);
+
             RandomPerson = people[Random.Range(0, people.Length)];
             RandomOcasion = occasions[Random.Range(0, occasions.Length)];
 

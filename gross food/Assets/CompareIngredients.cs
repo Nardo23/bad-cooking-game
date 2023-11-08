@@ -25,6 +25,7 @@ namespace src
         public GameObject endScreen;
         public GameObject scenarioCanvas;
         public GameObject cookCanvas;
+        bool firstPlay = true; 
 
         void SetData()
         {
@@ -38,10 +39,12 @@ namespace src
                 SetData();
                 //Debug.Log(ingredients[0]);
                 //Debug.Log(objectSelectScript.PlayerIngredients[2]);
-                Main(ingredients, validRecipesDictionary);
+                if(firstPlay)
+                    Main(ingredients, validRecipesDictionary);
 
                 isValidRecipe(objectSelectScript.PlayerIngredients);
                 objectSelectScript.ingredientCount = 99;
+                firstPlay = false;
             }
             
        }
