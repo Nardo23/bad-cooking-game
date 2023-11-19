@@ -945,8 +945,8 @@ MonoBehaviour:
   RecipeDescription: {fileID: 0}
   ResultText: {fileID: 2065707131}
   goodResults:
-  - "All right! %% is actually eating this dinner! You pulled this ## off!l, but
-    just barely. You\u2019ll definitely be prepared next time, right? Right? "
+  - "All right! %% is actually eating this dinner! You pulled this ## off!, but just
+    barely. You\u2019ll definitely be prepared next time, right? Right? "
   - '%% is impressed. "The, er, rustic decor of your apartment belies a resourceful
     culinary prowess," they say. "This has truly been a ## to remember!" How fortuitous!'
   badResults:
@@ -1753,7 +1753,7 @@ Transform:
   m_GameObject: {fileID: 948496927}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 2.1030002, y: 2.954, z: 0}
-  m_LocalScale: {x: 2542.2925, y: 1310.1484, z: 99}
+  m_LocalScale: {x: 165005.31, y: 85034.06, z: 6425.51}
   m_Children: []
   m_Father: {fileID: 1169598954}
   m_RootOrder: 4
