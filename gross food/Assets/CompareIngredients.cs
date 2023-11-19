@@ -138,6 +138,7 @@ namespace src
                 YouMadeText.text = "You Made: " + validRecipesBinaryMap[binarySum];
                 Debug.Log("YOU MADE: " + validRecipesBinaryMap[binarySum]);
                 GetRecipeDescription(validRecipesBinaryMap[binarySum]);
+                RecipeDescription.text = "";
                 RecipeDescription.text = Description;
                 scenarioScript.endingScenario();
             } else {
@@ -145,6 +146,7 @@ namespace src
                 goodEnding = false;
                 YouMadeText.text = "You Made: Garbage";
                 Debug.Log("YOU MADE: Garbage");
+                RecipeDescription.text = "";
                 //GetRecipeDescription(validRecipesBinaryMap[binarySum]);
                 //RecipeDescription.text = Description;
                 scenarioScript.endingScenario();
