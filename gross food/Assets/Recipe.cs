@@ -6,7 +6,7 @@ public class Recipe : MonoBehaviour
 {
 
     [SerializeField]
-    public GameObject[] recipeIngredients;
+    public string[] recipeIngredients;
     
     
     // Start is called before the first frame update

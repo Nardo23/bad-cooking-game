@@ -16,7 +16,7 @@ TagManager:
   - 
   - 
   - ingredient
-  - 
+  - particles
   - 
   - 
   - 
@@ -45,4 +45,7 @@ TagManager:
     locked: 0
   - name: EndUI
     uniqueID: 1658857795
+    locked: 0
+  - name: UIParticles
+    uniqueID: 2801001059
     locked: 0

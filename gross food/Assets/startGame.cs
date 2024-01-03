@@ -16,18 +16,19 @@ namespace src
         public GameObject EndScreen;
         public GameObject nameText, descriptionText;
         public GameObject rerollButton;
+        public GameObject RecipeBookButton;
+        public GameObject ingredientCountText;
 
         [SerializeField]
         AudioMixerSnapshot[] Snashots;
         public GameObject music;
         int musicCount;
-
+        public rerollSound rerollSoundScript;
         // Start is called before the first frame update
         void Start()
         {
             startStuff();
         }
-
 
         public void startStuff()
         {
@@ -37,10 +38,12 @@ namespace src
             EndScreen.SetActive(false);
             nameText.SetActive(false);
             descriptionText.SetActive(false);
+            rerollSoundScript.playClip();
         }
         public void activateRerolls()
         {
             rerollButton.SetActive(true);
+            RecipeBookButton.SetActive(true);
         }
         public void startTheGame()
         {
@@ -48,11 +51,10 @@ namespace src
             startButton.SetActive(false);
             ingredients.SetActive(true);
             rerollButton.SetActive(false);
-            nameText.SetActive(true);
-            descriptionText.SetActive(true);
-
-
-
+            RecipeBookButton.SetActive(false);
+            //nameText.SetActive(true);
+            //descriptionText.SetActive(true);
+            //ingredientCountText.SetActive(true);
 
         }
 
@@ -73,7 +75,6 @@ namespace src
                 musicCount++;
             }
         }
-
 
 
     }

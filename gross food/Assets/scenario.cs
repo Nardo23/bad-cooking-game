@@ -21,7 +21,7 @@ namespace src
         string[] goodResults, badResults;
         public CompareIngredients CompareScript;
         string ResultString;
-        string RandomPerson, RandomOcasion;
+        public string RandomPerson, RandomOcasion;
         public GameObject startButton;
         // Start is called before the first frame update
         void Start()

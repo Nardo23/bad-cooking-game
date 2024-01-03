@@ -18,7 +18,7 @@ namespace src
         {
             ingredientData();
 
-            recipeData();
+            //recipeData();
 
         }
 
@@ -34,29 +34,12 @@ namespace src
                 ingredients[counter].SetActive(true);
                 ingredients[counter].GetComponent<SpriteRenderer>().enabled = true;
                 ingredientNames[counter] = ingredientName.GetComponent<ingredient>().ingredientName;
-                Debug.Log(ingredientNames[counter]);
+                //Debug.Log(ingredientNames[counter]);
                 counter++;
             }
         }
 
-        void recipeData()
-        {
-            recipes = GameObject.FindGameObjectsWithTag("recipe");
-            foreach (GameObject RecipeObj in recipes)
-            {
-                GameObject[] RecipeIngredientObj = RecipeObj.GetComponent<Recipe>().recipeIngredients;
-                foreach (GameObject ingredientChild in RecipeIngredientObj)
-                {
-                    string name = ingredientChild.GetComponent<ingredient>().ingredientName;
-                    Debug.Log(name);
-                }
-
-            }
-
-
-
-
-        }
+        
 
 
 
